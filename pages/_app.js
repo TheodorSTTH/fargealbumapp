@@ -1,6 +1,7 @@
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import SellYourSoul from '@/components/SellYourSoul'
+import { Analytics } from '@vercel/analytics/react';
 import '@/styles/globals.css'
 
 export default function App({ Component, pageProps }) {
@@ -8,6 +9,7 @@ export default function App({ Component, pageProps }) {
     <Navbar />
     <SellYourSoul />
     <Component {...pageProps} />
+    <Analytics />
     <Footer />
   </div>
 }
