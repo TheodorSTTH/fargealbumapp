@@ -6,7 +6,6 @@ import YMargin from "@/components/YMargin";
 import ArrowRight from "@/components/ArrowRight";
 import Anchor from "@/components/Anchor";
 import { useRouter } from "next/router";
-import { useState } from "react";
 import CONSTANTS from "@/constants";
 import { getBookCost, queryToUrlParams } from "@/functions/utils";
 import H2 from "@/components/H2";

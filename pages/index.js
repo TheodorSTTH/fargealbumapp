@@ -1,11 +1,6 @@
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-import Navbar from '@/components/Navbar'
-import { useEffect } from 'react'
 import Anchor from '@/components/Anchor'
 import ArrowRight from "@/components/ArrowRight"
-const inter = Inter({ subsets: ['latin'] })
 import Image from 'next/image'
 import XMargin from '@/components/XMargin'
 import YMargin from '@/components/YMargin'
