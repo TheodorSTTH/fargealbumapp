@@ -1,5 +1,5 @@
 import Anchor from "./Anchor"
-import Aperture from "./aperture"
+import Aperture from "./Aperture"
 import ArrowRight from "./ArrowRight"
 
 function Navbar() {
