@@ -4,6 +4,8 @@ import CONSTANTS from "@/constants";
 
 var transporter = nodemailer.createTransport({
     service: 'gmail',
+    secure: true,
+    port: 465,
     auth: {
         user: 'farge.album@gmail.com',
         pass: process.env.emailpassword
