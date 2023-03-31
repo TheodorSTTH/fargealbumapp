@@ -3,7 +3,6 @@ import H2 from "@/components/H2";
 import ProgressPurchase from  "@/components/ProgressPurchase";
 import XMargin from "@/components/XMargin";
 import YMargin from "@/components/YMargin";
-import Anchor from "@/components/Anchor";
 import { queryToUrlParams, sendEmail } from "@/functions/utils";
 import { useRouter } from "next/router";
 import { useState } from "react";

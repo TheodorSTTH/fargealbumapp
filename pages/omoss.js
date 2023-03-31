@@ -1,4 +1,3 @@
-import Breadcrumbs from "@/components/breadcrumbs";
 import H1 from "@/components/H1";
 import XMargin from "@/components/XMargin";
 import YMargin from "@/components/YMargin";

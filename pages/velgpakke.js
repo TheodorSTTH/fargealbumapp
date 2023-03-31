@@ -1,6 +1,5 @@
 import BookCover from "@/components/BookCover";
 import H2 from "@/components/H2";
-import H3 from "@/components/H3";
 import ProgressPurchase from "@/components/ProgressPurchase";
 import Costs from "@/components/Costs";
 import XMargin from "@/components/XMargin";
