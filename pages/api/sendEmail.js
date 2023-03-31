@@ -4,8 +4,9 @@ import CONSTANTS from "@/constants";
 
 var transporter = nodemailer.createTransport({
     service: 'gmail',
+    host: 'smtp.gmail.com',
     secure: true,
-    port: 465,
+    port: 587,
     auth: {
         user: 'farge.album@gmail.com',
         pass: process.env.emailpassword
@@ -53,7 +54,7 @@ async function sendEmail(from, to, subject, text) {
         } else {
             console.log('Email sent: ' + info.response);
         }
-    });
+    })
 }
 const genRand = (len) => {
     return Math.random().toString(36).substring(2,len+2);
