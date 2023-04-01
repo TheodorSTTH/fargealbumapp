@@ -48,13 +48,18 @@ async function sendEmail(from, to, subject, text) {
         subject: subject,
         text: text
     };
-    transporter.sendMail(mailOptions, function(error, info){
-        if (error) {
-            console.log(error);
-        } else {
-            console.log('Email sent: ' + info.response);
-        }
+    const emailPromise = new Promise((resolve, reject) => {
+        transporter.sendMail(mailOptions, function(error, info){
+            if (error) {
+                console.log(error);
+                reject(error)
+            } else {
+                console.log('Email sent: ' + info.response);
+                resolve(info)
+            }
+        })
     })
+    await emailPromise
 }
 const genRand = (len) => {
     return Math.random().toString(36).substring(2,len+2);
