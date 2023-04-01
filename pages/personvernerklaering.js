@@ -3,7 +3,7 @@ import H1 from "@/components/H1";
 import XMargin from "@/components/XMargin";
 import YMargin from "@/components/YMargin";
 
-export default function personvernerklaering() {
+export default function personvernerklaering(props) {
     return (
     <XMargin>
         <YMargin breadcrumbs={true}>
@@ -65,4 +65,10 @@ export default function personvernerklaering() {
             </ol>
         </YMargin>
     </XMargin>)
+}
+
+export async function getStaticProps(context) {
+    return {
+        props: {},
+    }
 }

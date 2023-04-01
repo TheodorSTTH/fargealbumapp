@@ -2,7 +2,7 @@ import H1 from "@/components/H1";
 import XMargin from "@/components/XMargin";
 import YMargin from "@/components/YMargin";
 
-export default function omoss() {
+export default function omoss(props) {
     return (
     <XMargin>
         <YMargin breadcrumbs={true}>
@@ -27,4 +27,9 @@ export default function omoss() {
                 </p>
         </YMargin>
     </XMargin>)
+}
+export async function getStaticProps(context) {
+    return {
+        props: {},
+    }
 }

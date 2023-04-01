@@ -4,7 +4,7 @@ import H1 from "@/components/H1";
 import Collapse from "@/components/Collapse";
 import ContactEmail from "@/components/ContactEmail";
 
-export default function FAQ() {
+export default function FAQ(props) {
     return <XMargin>
         <YMargin breadcrumbs={true}>
             <H1>FAQ <i className="opacity-50">(Ofte Stilte Spørsmål)</i></H1>
@@ -33,4 +33,9 @@ export default function FAQ() {
             </p>
         </YMargin>
     </XMargin>
+}
+export async function getStaticProps(context) {
+    return {
+        props: {},
+    }
 }

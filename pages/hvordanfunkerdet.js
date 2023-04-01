@@ -4,7 +4,7 @@ import YMargin from "@/components/YMargin";
 import Anchor from "@/components/Anchor";
 import ArrowRight from "@/components/ArrowRight";
 
-export default function hvordanfunkerdet() {
+export default function hvordanfunkerdet(props) {
     return (<XMargin>
         <YMargin breadcrumbs={true}>
             <H1>Hvordan funker Farge Album?</H1>
@@ -52,3 +52,8 @@ export default function hvordanfunkerdet() {
         </YMargin>
     </XMargin>)
 }
+export async function getStaticProps(context) {
+    return {
+      props: {},
+    }
+  }

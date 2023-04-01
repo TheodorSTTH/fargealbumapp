@@ -2,7 +2,7 @@ import XMargin from "@/components/XMargin";
 import YMargin from "@/components/YMargin";
 import H1 from "@/components/H1";
 
-export default function credits() {
+export default function credits(props) {
     return <XMargin>
         <YMargin breadcrumbs={true}>
             <H1>Credits:</H1>
@@ -10,4 +10,10 @@ export default function credits() {
             <p>En varm takk til <a href="https://daisyui.com/" className="text-blue-500 hover:underline">DaisyUI</a></p>
         </YMargin>
     </XMargin>
+}
+
+export async function getStaticProps(context) {
+    return {
+        props: {},
+    }
 }

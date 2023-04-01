@@ -5,7 +5,7 @@ import Image from 'next/image'
 import XMargin from '@/components/XMargin'
 import YMargin from '@/components/YMargin'
 import H1 from '@/components/H1'
-export default function Home() {
+export default function Home(props) {
   const greenTextShadow = {textShadow: 'rgba(49, 192, 49, 0.4) 1px 0 10px;'}
   return (
     <XMargin>
@@ -91,4 +91,10 @@ export default function Home() {
       </YMargin>
     </XMargin>
   )
+}
+
+export async function getStaticProps(context) {
+  return {
+    props: {},
+  }
 }

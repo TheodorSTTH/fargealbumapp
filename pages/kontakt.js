@@ -2,7 +2,7 @@ import H1 from "@/components/H1";
 import XMargin from "@/components/XMargin";
 import YMargin from "@/components/YMargin";
 
-export default function kontakt(){
+export default function kontakt(props){
     return <XMargin>
         <YMargin breadcrumbs={true}>
             <H1>Kontakt</H1>
@@ -11,4 +11,9 @@ export default function kontakt(){
             <p>Du kan også ringe <a href="tel:40644339" className="hover:underline text-blue-500" title="Kontakt oss mellom klokka 16 og 22">406 44 339</a> (kl. 16-22)</p>
         </YMargin>
     </XMargin>
+}
+export async function getStaticProps(context) {
+    return {
+        props: {},
+    }
 }

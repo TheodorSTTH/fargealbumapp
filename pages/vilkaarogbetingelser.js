@@ -3,7 +3,7 @@ import H1 from "@/components/H1";
 import XMargin from "@/components/XMargin";
 import YMargin from "@/components/YMargin";
 
-export default function vilkaarogbetingelser() {
+export default function vilkaarogbetingelser(props) {
     return (
     <XMargin>
         <YMargin breadcrumbs={true}>
@@ -11,7 +11,7 @@ export default function vilkaarogbetingelser() {
                 <ol className="list-decimal">
                     <li>
                         <b>Innledning</b>
-                        <p>Disse vilkårene og betingelsene ("Vilkårene") gjelder for bruk av nettsiden www.fargealbum.no ("Nettsiden") og tjenestene som tilbys av Farge Album ("Selskapet", "vi", "oss" og "vår"). Ved å bruke Nettsiden og våre tjenester, aksepterer du disse Vilkårene. Hvis du ikke aksepterer Vilkårene, må du ikke bruke Nettsiden eller våre tjenester.</p>
+                        <p>Disse vilkårene og betingelsene ("Vilkårene") gjelder for bruk av nettsiden www.fargealbum.com ("Nettsiden") og tjenestene som tilbys av Farge Album ("Selskapet", "vi", "oss" og "vår"). Ved å bruke Nettsiden og våre tjenester, aksepterer du disse Vilkårene. Hvis du ikke aksepterer Vilkårene, må du ikke bruke Nettsiden eller våre tjenester.</p>
                     </li>
                     <li>
                         <b>Tjenester</b>
@@ -62,4 +62,9 @@ export default function vilkaarogbetingelser() {
                 </ol>
         </YMargin>
     </XMargin>)
+}
+export async function getStaticProps(context) {
+    return {
+        props: {},
+    }
 }

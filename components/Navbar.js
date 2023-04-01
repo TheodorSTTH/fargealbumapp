@@ -17,8 +17,7 @@ function Navbar() {
                             strokeColor="black"
                             />
                             <div>
-                            Farge Album
-
+                                Farge Album
                             </div>
                         </div>
                     </Anchor>
@@ -53,26 +52,26 @@ function Navbar() {
                                 </li>
                                 <li>
                                     <Anchor
-                                    href="/privacypolicy"
-                                    title="Privacy Policy"
+                                    href="/personvernerklaering"
+                                    title="Personvernerklæring"
                                     >
-                                        Privacy Policy
+                                        Personvernerklæring
                                     </Anchor>
                                 </li>
                                 <li>
                                     <Anchor
-                                    href="/cookiepolicy"
-                                    title="Cookie Policy"
+                                    href="/informasjonskapsler"
+                                    title="informasjonskapsler"
                                     >
-                                        Cookie Policy
+                                        Informasjonskapsler
                                     </Anchor>
                                 </li>
                                 <li>
                                     <Anchor
-                                    href="/termsandconditions"
-                                    title="Terms and Conditions"
+                                    href="/vilkaarogbetingelser"
+                                    title="Vilkår og betingelser"
                                     >
-                                        Terms and Conditions
+                                        Vilkår og betingelser
                                     </Anchor>
                                 </li>
                         </ul>
@@ -132,26 +131,26 @@ function Navbar() {
                                 </li>
                                 <li>
                                     <Anchor
-                                    href="/privacypolicy"
-                                    title="Privacy Policy"
+                                    href="/personvernerklaering"
+                                    title="Personvernerklæring"
                                     >
-                                        Privacy Policy
+                                        Personvernerklæring
                                     </Anchor>
                                 </li>
                                 <li>
                                     <Anchor
-                                    href="/cookiepolicy"
-                                    title="Cookie Policy"
+                                    href="/informasjonskapsler"
+                                    title="informasjonskapsler"
                                     >
-                                        Cookie Policy
+                                        Informasjonskapsler
                                     </Anchor>
                                 </li>
                                 <li>
                                     <Anchor
-                                    href="/termsandconditions"
-                                    title="Terms and Conditions"
+                                    href="/vilkaarogbetingelser"
+                                    title="Vilkår og betingelser"
                                     >
-                                        Terms and Conditions
+                                        Vilkår og betingelser
                                     </Anchor>
                                 </li>
                             </ul>
