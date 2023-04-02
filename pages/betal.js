@@ -9,6 +9,7 @@ import { useRouter } from "next/router";
 import CONSTANTS from "@/constants";
 import { getBookCost, queryToUrlParams } from "@/functions/utils";
 import H2 from "@/components/H2";
+import PrimaryButton from "@/components/PrimaryButton";
 
 function betal() {
     const router = useRouter();
@@ -45,10 +46,10 @@ function betal() {
                 title={"Neste side"}
                 disabled={false}
                 >
-                    <button className="btn btn-primary text-white" disabled={false}>
+                    <PrimaryButton>
                         Gå videre
                         <ArrowRight strokeWidth="4" style='w-4 h-4 ml-4' strokeColor={true ? "white": "rgb(177, 177, 183)"}/>
-                    </button>
+                    </PrimaryButton>
                 </Anchor>
             </div>
         </YMargin>

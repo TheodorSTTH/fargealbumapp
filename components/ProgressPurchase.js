@@ -1,5 +1,5 @@
 export default function ProgressPurchase({step=0}) {
-    return (<ul className="steps py-0 ">
+    return (<ul className="steps py-0 max-md">
         <li className={" step " + (step >= 1 ? "step-primary" : "")}>
             <b className={"max-md:hidden " + (step == 1 ? "text-2xl" : "text-xl opacity-50")}>Velg bok omslag 🏞️</b>
         </li>

@@ -52,7 +52,7 @@ export default function velgpakke() {
                         title={(currentBook ? [currentBook] : []).length ? "Neste side" : "Du må velge et bok omslag for å gå videre"}
                         disabled={!(currentBook ? [currentBook] : []).length}
                         >
-                            <button className="btn btn-primary text-white" disabled={!(currentBook ? [currentBook] : []).length}>
+                            <button className="btn btn-primary text-white bg-green-800" disabled={!(currentBook ? [currentBook] : []).length}>
                                 Gå videre 
                                 <ArrowRight strokeWidth="4" style='w-4 h-4 ml-4' strokeColor={(currentBook ? [currentBook] : []).length ? "white": "rgb(177, 177, 183)"}/>
                             </button>

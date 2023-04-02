@@ -54,6 +54,6 @@ export default function hvordanfunkerdet(props) {
 }
 export async function getStaticProps(context) {
     return {
-      props: {},
+        props: {},
     }
-  }
+}

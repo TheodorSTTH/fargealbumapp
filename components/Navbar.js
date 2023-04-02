@@ -1,6 +1,7 @@
 import Anchor from "./Anchor"
 import Aperture from "./Aperture"
 import ArrowRight from "./ArrowRight"
+import PrimaryButton from "./PrimaryButton"
 
 function Navbar() {
     return (
@@ -159,10 +160,10 @@ function Navbar() {
                         href='/velgpakke'
                         title="Bestill"
                         >
-                            <button className="btn btn-primary text-white">
+                            <PrimaryButton>
                                 Bestill 
                                 <ArrowRight strokeWidth="4" style='w-4 h-4 ml-4'/>
-                            </button>
+                            </PrimaryButton>
                         </Anchor>
                     </ul>
                 </div>
