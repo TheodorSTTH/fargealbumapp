@@ -10,6 +10,7 @@ import { useRouter } from "next/router";
 import { queryToUrlParams } from "@/functions/utils";
 import Anchor from "@/components/Anchor";
 import ArrowRight from "@/components/ArrowRight";
+import AddBookPages from "@/components/AddBookPages";
 
 export default function velgpakke() {
     const [currentBook, setCurrentBook] = useState()
@@ -47,6 +48,7 @@ export default function velgpakke() {
                         {/* 
                         // TODO make the code below pretty
                         */}
+                        <AddBookPages className={"pb-8"}/>
                         <Anchor
                         href={(currentBook ? [currentBook] : []).length ? "/registrerdeg?" + queryToUrlParams(router.query) : "#"}
                         title={(currentBook ? [currentBook] : []).length ? "Neste side" : "Du må velge et bok omslag for å gå videre"}
