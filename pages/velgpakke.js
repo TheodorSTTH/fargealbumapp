@@ -14,11 +14,20 @@ import AddBookPages from "@/components/AddBookPages";
 
 export default function velgpakke() {
     const [currentBook, setCurrentBook] = useState()
+    console.log(currentBook)
+    const [pageCost, setPageCost] = useState()
     const books = CONSTANTS.books;
     const router = useRouter();
     function clickHandler(name, cost, imageURL) {
         setCurrentBook({name, cost, imageURL})
         router.push(`?book_name=${name}`, undefined, { shallow: true })
+        addPages(24)
+    }
+    function pagesToPrice(pages) {
+        return pages * 2
+    }
+    function addPages(pages) { // TODO Fiks velg alternativene sånn at de er reaktive og responsivhet
+        setPageCost(pagesToPrice(pages))
     }
     return (
         <XMargin>
@@ -43,12 +52,15 @@ export default function velgpakke() {
                     </div>
                     <div className="w-2/5 max-md:w-full h-96 px-8 max-md:pt-8">
                         <Costs
-                        products={currentBook ? [currentBook] : []}
+                        products={currentBook ? [currentBook, {name: "pages", cost: pageCost}] : []}
                         />
                         {/* 
                         // TODO make the code below pretty
                         */}
-                        <AddBookPages className={"pb-8"}/>
+                        {currentBook && <AddBookPages 
+                        className={"pb-8"}
+                        pagesSelected={addPages}
+                        />}
                         <Anchor
                         href={(currentBook ? [currentBook] : []).length ? "/registrerdeg?" + queryToUrlParams(router.query) : "#"}
                         title={(currentBook ? [currentBook] : []).length ? "Neste side" : "Du må velge et bok omslag for å gå videre"}
